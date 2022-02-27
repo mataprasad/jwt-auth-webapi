@@ -1,0 +1,10 @@
+JWT Authentication in ASP.NET WebAPI
+(4 simple steps)
+
+1)Install `System.IdentityModel.Tokens.Jwt` nuget package
+
+2)Create JWT token
+
+3)Validate token in `AuthenticateRequest` handler in `global.asax.cs` and set the `HttpContext.Current.User` form validated JWT token
+
+4)Apply `[Authorize]` attribute on Controller to enable authentication
